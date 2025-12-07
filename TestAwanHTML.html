@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aplikasi PaaS Gratis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            margin-top: 50px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .info {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Selamat! Aplikasi Anda Berjalan di Railway</h1>
+        
+        <div class="info">
+            <h2>📊 Informasi Aplikasi:</h2>
+            <p><strong>Platform:</strong> Railway (PaaS)</p>
+            <p><strong>Status:</strong> Live Production</p>
+            <p><strong>Biaya:</strong> Gratis (Free Tier)</p>
+            <p><strong>URL:</strong> https://your-app-name.railway.app</p>
+        </div>
+        
+        <div class="info">
+            <h2>🚀 Fitur Railway Free Tier:</h2>
+            <ul>
+                <li>Deploy langsung dari GitHub</li>
+                <li>Automatic HTTPS</li>
+                <li>Custom domains</li>
+                <li>Database included</li>
+                <li>Monitoring dasar</li>
+            </ul>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <p>Dibuat dengan ❤️ menggunakan Railway PaaS</p>
+            <p>Waktu server: <span id="time"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // Menampilkan waktu
+        function updateTime() {
+            const now = new Date();
+            document.getElementById('time').textContent = 
+                now.toLocaleString('id-ID');
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>
